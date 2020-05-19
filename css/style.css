@@ -11,6 +11,14 @@ html, body {
     scroll-behavior: smooth;
 }
 
+html {
+    height: 100%;
+    background: #000;
+    background-image: -o-radial-gradient(circle, #300d0d 1%, transparent 20%), -o-radial-gradient(circle, #300d0d 1%, transparent 20%);
+    background-image: radial-gradient(circle, #300d0d 1%, transparent 20%), radial-gradient(circle, #300d0d 1%, transparent 20%);
+    background-size: 10px 10px;
+}
+
 .wrapper {
     width: 90%;
     max-width: 1250px;
@@ -32,7 +40,99 @@ html, body {
     white-space: nowrap !important;
 }
 
-/* media queries*/
-@media only screen and (min-width: 900px) {
+/* header */
+.header {
+    padding: 2rem 0;
+}
 
+.header__wrapper {
+    padding: 2rem 0.5rem;
+    background: #111111;
+    border-radius: 5px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.header__title {
+    color: #fff;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 2.5px;
+    line-height: 1.5;
+    margin: 0;
+    padding: 0;
+}
+
+.title__span {
+    color: #ff0000;
+}
+
+/* section */
+.section {
+    padding: 1rem 0;
+}
+
+.section__wrapper {
+    padding: 2rem 0.5rem;
+    background: #111111;
+    border-radius: 5px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.section__title {
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    line-height: 1.5;
+}
+
+.list {
+    list-style: none;
+    line-height: 1.5;
+}
+
+.list__link {
+    color: #fff;
+    text-decoration: none;
+    opacity: 0.8;
+    -webkit-transition: opacity 0.3s;
+    -o-transition: opacity 0.3s;
+    transition: opacity 0.3s;
+}
+
+.list__link:hover {
+    opacity: 1;
+}
+
+/* footer */
+.footer__wrapper {
+    padding: 2rem 0;
+    text-align: center;
+}
+
+.footer__paragraph {
+    color: #fff;
+    opacity: 0.8;
 }
